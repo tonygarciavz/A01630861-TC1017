@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+int fahr;
+float cels;
+
+cout<<"\nPlease, put the temperature un Fahrenheit:";
+cin>>fahr;
+
+cels=(5*(fahr-32))/9;
+
+cout<<"The temperarure of "<<fahr<<" degrees Fahrenheit is "<<cels<<" in Celsius degrees"<<endl;
+
+if (cels<100)
+{
+cout<<"\nWater doesn't boil at this temperature (under typical conditions)."<<endl;
+}
+else 
+{
+cout<<"\nWater does boil at this temperature (under typical conditions)."<<endl;
+}
+return 0;
+}
