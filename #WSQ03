@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int i,j,sum,res,pro,coc,resid;
+
+cout<<"\nIngrese primer numero: ";
+cin>>i;
+cout<<"\n\nIngrese segundo numero: ";
+cin>>j;
+sum=i+j;
+res=i-j;
+pro=i*j;
+coc=(int)i/j;
+resid=i%j;
+cout<<"\nLa suma es: "<<sum;
+cout<<"\nLa resta es: "<<res;
+cout<<"\nEl producto es: "<<pro;
+cout<<"\nEl cociente es: "<<coc;
+cout<<"\nEl residuo es: "<<resid;
+return 0;
+}
