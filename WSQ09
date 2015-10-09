@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+long int factorial(int x)
+{
+int i;
+long int facto=1;
+for (i=2;i<=x;i++)
+facto=facto*i;
+return facto;
+}
+
+int main ()
+{
+	
+char tri;	
+int f;
+
+do{
+cout<<"\nPut your number here: ";
+cin>>f;
+cout<<"\nThe factorial is: "<<factorial(f)<<"\n\nDo you want to try again?\nChoose y if you want to, if you don't click the n button."<<endl;
+cin>>tri;
+}while (tri == 'y');
+return 0;
+}
