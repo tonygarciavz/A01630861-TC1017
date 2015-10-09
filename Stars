@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+char stars(int strs)
+{
+char stre = '*';
+int i;
+for(i=0;i<=strs;i++)
+{
+cout<<stre;	
+}
+}
+int main()
+{
+int ns;
+cout<<"\nChoose a number of stars: ";
+cin>>ns;
+cout<<stars(ns)<<endl;
+return 0;
+}
