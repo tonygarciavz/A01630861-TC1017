@@ -1,0 +1,46 @@
+#include <iostream>
+
+using namespace std;
+
+int suma (int x, int y)
+{
+int sum=x+y;
+return sum;
+}
+int resta (int x, int y)
+{
+int res=x-y;
+return res;
+}
+int producto (int x, int y)
+{
+int prod=x*y;
+return prod;
+}
+int cociente (int x, int y)
+{
+int coc=x/y;
+return coc;
+}
+int residuo (int x, int y)
+{
+int resi=x%y;
+return resi;
+}
+
+int main()
+{
+int i,j;
+
+cout<<"\nIngrese primer numero: ";
+cin>>i;
+cout<<"\n\nIngrese segundo numero: ";
+cin>>j;
+
+cout<<"\nLa suma es: "<<suma(i,j);
+cout<<"\nLa resta es: "<<resta(i,j);
+cout<<"\nEl producto es: "<<producto(i,j);
+cout<<"\nEl cociente es: "<<cociente(i,j);
+cout<<"\nEl residuo es: "<<residuo(i,j);
+return 0;
+}
