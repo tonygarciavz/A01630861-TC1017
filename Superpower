@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+long superpower(long a, long b)
+{
+return pow(a,b); 
+}
+int main()
+{
+int x,y;
+cout<<"\nPut first number: ";
+cin>>x;
+cout<<"\nPut the second number: ";
+cin>>y;
+cout<<"The first number powered by the second is: "<<superpower(x,y)<<endl;
+return 0;
+}
