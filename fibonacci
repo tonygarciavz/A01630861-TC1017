@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+long fibonacci(long n)
+{
+int i;
+long int ante=1,ante2=0,fibofin=0;
+for (i=1;i<=n;i++)
+{
+fibofin=ante+ante2;
+ante=ante2;
+ante2=fibofin;
+}
+return fibofin;
+}
+int main()
+{
+long int x;
+cout<<"\nPlease enter the n position of the fibonacci number: ";
+cin>>x;
+cout<<"\nThe corresponding number for your position is: "<<fibonacci(x)<<endl;
+return 0;
+}
