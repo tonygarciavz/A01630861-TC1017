@@ -1,0 +1,34 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int isPalindrome(string x)
+{
+  int largopal= x.length();
+  string nword= "";
+  int i=largopal-1;
+  for (i;i>=0;i--)
+  {
+    nword=nword+x[i];
+  }
+if (x==nword)
+{
+cout<<"\nVerdad"<<endl;//return true;
+}
+else //return false;
+{
+	cout<<"\nFalso"<<endl;
+}
+
+}
+
+int main()
+{
+  string c;
+  cout <<"\nWrite a word in order to know if is it a palindrome: " << endl;
+  cin >> c;
+  cout<<isPalindrome(c);
+ 
+  return 0;
+}
