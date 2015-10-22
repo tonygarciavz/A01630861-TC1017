@@ -1,0 +1,29 @@
+#include <iostream> 
+
+using namespace std;
+
+int sumsquares_list(int x[], int tamano)
+{
+int i=0, scuad=0;
+for (i;i<tamano;i++)
+{
+scuad=scuad+(x[i]*x[i]);
+}
+return scuad;
+}
+
+int main ()
+{
+int numeros[5],q=0;;
+cout<<"\nPut numbers in order to calculate the sum of the squares of these numbers.\nFirst number here: ";
+cin>>numeros[q];
+
+for(q=1;q<5;q++)
+{
+	cout<<"\nNext number: ";
+	cin>>numeros[q];
+}
+
+	cout<<"\nThe sum of the squares of these numbers is: "<<sumsquares_list(numeros,5)<<endl;
+return 0;
+}
