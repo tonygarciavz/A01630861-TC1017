@@ -1,0 +1,46 @@
+#include <iostream>
+
+using namespace std;
+
+int mcdeud(int a, int b)
+{
+int resi,mayor,menor,mcd;
+  if(a>b)
+  {
+    mayor=a;
+    menor=b;
+  }
+  else if(b>a) //acomodo para hacer division en while
+  {
+    mayor=b;
+    menor=a;
+  }
+  else if(a==b) //si son iguales, cualquiera de los dos es gcd
+  {
+    mcd=a;
+  }
+  resi=mayor%menor;
+      while(resi!=0){
+        resi=mayor%menor;
+        mayor=menor;
+        menor=resi;
+        mcd=resi;
+        resi=mayor%menor;
+      }
+      if(resi==0)
+		  {
+			  mcd=menor;
+			  }
+return mcd;
+}
+
+int main()
+{
+int pri,seg,resultado;
+cout<<"Enter two integer values: ";
+cin>>pri;
+cout<<"One left: ";
+cin>>seg;
+cout<<"The gct of your numbers is: "<<mcdeud(pri,seg)<<endl;
+return 0;
+}
