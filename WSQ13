@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+float sqbaby(int x)
+{
+  float raiz=x;
+      while ((raiz-x/raiz)/2>0.000001)
+	  {
+          raiz=(raiz+x/raiz)/2;
+      }
+  return raiz;
+}
+
+int main()
+{
+  int cuad; 
+  
+cout<<"\nPlease, put a number in order to calculate it's squuare root by babylonian method: ";
+cin>>cuad;
+cout<<"\nThe square root is: "<<sqbaby(cuad);
+
+return 0;
+}
